@@ -7,6 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 1920px;
+  height:auto;
+  background-image: url("../src/img/wallpaperbetter.jpg");
 }
 
 code {

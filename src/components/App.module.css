@@ -1,12 +1,9 @@
 .Container{
-   min-width: 1920px;
-   height: 100vh;
    display: flex;
+   min-width: 768px;
   flex-direction: column;
   justify-content: center;
    align-items: center;
-   background-color: #cdcebc46;
-   background-image: url("../img/wallpaperbetter.jpg");
 }
 
 .Title{
