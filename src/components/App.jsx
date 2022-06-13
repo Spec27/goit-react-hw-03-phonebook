@@ -51,6 +51,21 @@ class App extends Component{
       contacts: prevState.contacts.filter(contact=>contact.id !==contactId),
     }))
   }
+
+  componentDidMount() {
+    const cotact = localStorage.getItem('contacts');
+    const parsedContact = JSON.parse(cotact);
+    if (parsedContact) {
+      this.setState({contacts: parsedContact})
+    }
+  };
+
+
+  componentDidUpdate(prevProps,prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem("contacts",JSON.stringify(this.state.contacts))
+    }
+  }
   
 
   render() {
